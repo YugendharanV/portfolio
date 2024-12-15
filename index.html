@@ -1,69 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Responsive Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <img src="/IMG_6247 (1).jpg" id="pic1" alt="">
-            <h1>Hi I'm <span>Y</span>ugendharan V</h1>
-            <p>Hello! I'm a fresher in Engineering. Let me showcase my skills and projects.</p>
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Portfolio</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
         </div>
-    </header>
+      </ul>
+      <div class="media-icons">
+        <a href="https://www.linkedin.com/in/yugendharan-v-0582a224a/"><i class="fab fa-linkedin" style="font-size: 24px;"></i></a>
+        <a href="https://github.com/YugendharanV"><i class="fab fa-github"></i></a>
+        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <!-- <hr style="border: 2px solid rgba(0, 0, 0, 0.543);"> -->
+  </nav>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text"> <br>
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Yugendharan V</div>
+        <div class="text-three">Web Designer</div>
+        <div class="text-four"><span style="color: #4070f4;">From</span> New Washermenpet-Chennai</div>
+      </div>
+      <div class="button">
+        <a href="/Magic Resume_Y.pdf.pdf" download="Magic Resume_Y.pdf"><button type="button">Download Resume</button></a>
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a recent engineering graduate with a passion for learning and problem-solving. I am eager to apply my skills to real-world projects.</p>
-            <div class="resume">
-            <a href="/Magic Resume_Y.pdf.pdf" download="Magic Resume_Y.pdf"><button type="button">Download Resume</button></a></div>
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="/IMG_6247 (1).jpg" alt="" />
         </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Programming Languages: </strong><marquee behavior="alternate" direction="left">Python <img src="" alt="">, JavaScript</marquee></li>
-                <li><strong>Web Development: </strong> <marquee behavior="alternate" direction="right">HTML, CSS, Responsive Design</marquee></li>
-                <li><strong>Tools: </strong> <marquee behavior="alternate" direction="">Git, Figma</marquee></li>
-            </ul>
+        <div class="right">
+          <div class="topic">Education Qualification & Passion</div>
+          <p>
+            I'm completed my Bachelors in Computer and Communication Engineering at Panimalar Engineering College with 8.21 CGPA and I did my schooling at K.C.Sankaralinga Nadar Higher Secondary School My area of interest is Web Designing. I joined Magic India Bus Foundation and I currently learning Web Designing in that center. I want to become a Web Designer.          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Project 1:</strong> Personal Portfolio Website (HTML & CSS)</li>
-                <li><strong>Project 2:</strong> Simulation of self-driving Vehicle and lane tracking for road transport using Computer Vision (Python, Jupiter Notebook, Anaconda 3.6)</li>
-            </ul>
+  <!-- My Skill Section Start -->
+  <!-- Section Tag and Other Div will same where we need to put same CSS -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>My Skills</span></div>
+      <div class="skills-details">
+        <div class="text">
+          <div class="topic">Skills Reflects Our Knowledge</div>
+          <p>Developing a skill requires in-depth knowledge. For instance, mastering programming Language indicates a solid grasp of computer science principles. Acquiring and refining skills reqiure continuous learning, which reflects the dynamic and evolving nature of knowledge.</p>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: yugitvt@gmail.com</p>
-            <p>Phone:(+91) 9176725750</p>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <div class="per">80%</div>
+          </div>
+          <div class="box">
+            <div class="topic">JavaScript</div>
+            <div class="per">10%</div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2024 My Portfolio. All rights reserved.</p>
-    </footer>
+  <!-- My Services Section Start -->
+  <section class="projects" id="projects">
+    <div class="content">
+      <div class="title"><span>My Projects</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <div class="topic">Simulation of Self-Driving Vehicles and Lane Tracking for Road Transport using Computer Vision</div>
+          <p>Programming Language: Python </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <div class="topic1">
+          <form action="">
+            <label for="name" id="pro1">Name</label><br>
+            <input type="text" id="pro2" placeholder="Enter Your Name"><br><br>
+            <label for="number"id="pro1">Phone Number</label><br>
+            <input type="text" id="pro2" placeholder="Enter Your Phone Number"><br><br>
+            <label for="email"id="pro1">Email Address</label><br>
+            <input type="text"id="pro2" placeholder="Enter Your Email"><br><br>
+            <button id="pro2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="text">
+      <span>Created By <a href="#">Yugendharan</a> | &#169; 2024 All Rights Reserved</span>
+    </div>
+  </footer>
+
 </body>
+
 </html>
