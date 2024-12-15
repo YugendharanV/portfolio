@@ -521,11 +521,6 @@ footer .text span a:hover {
     width: 350px;
   }
 }
-@media (max-width:640px){
-  .left img{
-    display: flex;
-  }
-}
 
 @media (max-width: 750px) {
   nav .navbar {
